@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+body{
+    background: #E4DEFE;
+}
+main{
+    width: 760px;
+    margin: 0 auto;
+    background: #FFFFFF;
+}
+form{
+    padding: 98px 96px;
+    color: #666666;
+}
+label{
+    font-size: 12px;
+    font-weight: 600;
+}
+input{
+    font-size: 16px;
+}
+.inputtext{
+    width: 564px;
+    padding: 16px;
+    border: 1.5px solid #CCCCCC;
+    border-radius: 8px;
+}
+.d-username{
+    margin-bottom: 32px;
+}
+.l-username{
+    margin-bottom: 8px;
+}
+.l-password{
+    color: #666666;
+    font-size: 12px;
+    margin-top: 8px;
+}
+.velidation-text{
+    margin-top: 8px;
+    font-size: 12px;
+    color: #EB5757;
+}
+.velidation-color{
+    width: 564px;
+    padding: 16px;
+    border: 1.5px solid #CCCCCC;
+    border-radius: 8px;
+}
+.velidation-color:hover {
+    border:2.5px solid #EB5757;
+}
+.velidation-color{
+     outline-color:#EB5757;
+}
+.d-velidation{
+    position: relative;
+}
+.warningicon{
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+.checkbox{
+    width: 24px;
+    height: 24px;
+    border-radius: 8px;
+}
+.remember_me{
+    font-size: 16px;
+    font-weight: 400;
+    vertical-align: top;
+    margin-left: 16px;
+}
+.radioaction{
+    width: 24px;
+    height: 24px;
+}
+/* switch */
+.switch{
+    position: relative;
+    width: 49px;
+    height: 24px;
+    display: inline-block;
+}
+.switch input{
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+.slider::before{
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 17px;
+    left: 4px;
+    bottom: 4px;
+    background: #FFFFFF;
+    transition: .4s;
+}
+input:checked + .slider{
+    background: #2196F3;
+}
+input:focus + .slider{
+    box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider::before{
+    transform: translateX(26px);
+}
+.slider.round{
+    border-radius: 32px;
+}
+.slider.round:before{
+    border-radius: 50%;
+}
