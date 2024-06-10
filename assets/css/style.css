@@ -68,13 +68,15 @@ input{
 .checkbox{
     width: 24px;
     height: 24px;
-    border-radius: 8px;
 }
 .remember_me{
     font-size: 16px;
     font-weight: 400;
     vertical-align: top;
     margin-left: 16px;
+}
+.me{
+    vertical-align: sub;
 }
 .radioaction{
     width: 24px;
@@ -127,3 +129,37 @@ input:checked + .slider::before{
 .slider.round:before{
     border-radius: 50%;
 }
+.active{
+    background-color: #7A5CFA;
+}
+option:hover{
+    background-color: #7A5CFA;
+}
+select{
+    display: block;
+    margin-top: 8px;
+}
+.sbutton{
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    width: 172px;
+    padding: 16px;
+    border: 1px solid #7A5CFA;
+    border-radius: 8px;
+    background: #FFFFFF;
+    color: #7A5CFA;
+}
+.next{
+    right: 0;
+    background: #7A5CFA;
+    color: #FFFFFF;
+}
+
+/* option:focus{
+    background-color: #7A5CFA;
+}
+option:active{
+    background-color: #7A5CFA;
+} */
